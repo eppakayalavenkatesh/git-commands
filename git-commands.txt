@@ -1,0 +1,39 @@
+git commnds:
+============='
+
+1. git merge branchname => merging means save all file from branchname to present were we run this command branch
+
+2. git merge --abort => if you don't need to change merged file is changes are done on both branched , just keep sa previous value use this command
+
+3. git rebase branchname => it combine  all the commit and show a single commit line in master is a head  , after this use git log --oneline to see it
+
+4.git rebase --interactive laster_comment use master or sha1 key // git rebase -i master => in this combine all commands and set to single command
+
+5. git switch branchname
+
+github setting : 
+===============
+
+create SSH using step by step from the official portal 
+
+after this check if ssh is authenticated with git or not using : ssh -T git@github.com
+
+2.git remote (or) git remote -v   To check if any github repocitory remote is available or not in a local git repocitory 
+
+3. git remote add origin <github-repocitory-url>  => add local repository to git hub
+
+4. git remote rename origin githuburl => used to rename github repocitory name in local repocitory
+
+5. git remote remove githuburl => remove the git hub url from local repository
+
+6. git push origin master => push master branch from local repository to remote repository
+
+7. git push origin another_branch:master => push all commit from another_branch to master branch in remote repository
+
+8. git branch => To show local repositories
+
+9. git branch -r => to show all remote repositories
+
+10. git checkout origin/main => to move to remote main branch 
+
+12. git pull origin/main main => pull all from remote main to working directory
